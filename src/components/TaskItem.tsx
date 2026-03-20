@@ -128,7 +128,7 @@ export function TaskItem({ task, onUpdate, onDelete, onDuplicate, teamMembers, c
             </div>
 
             <div className="flex justify-between items-center text-[11px] font-normal text-neutral-300 uppercase pt-2">
-                <span>Created by: <span className="text-[#00a9e0] font-medium">Hạo Manager</span></span>
+                <span>Created by: <span className="text-[#00a9e0] font-medium">you</span></span>
                 <span>{createdTime}</span>
             </div>
           </div>

@@ -8,7 +8,7 @@ export function useTaskStore() {
   const [selectedDate, setSelectedDate] = useState(format(new Date(), 'yyyy-MM-dd'));
   const [isLoaded, setIsLoaded] = useState(false);
   
-  // Lấy tên từ LocalStorage
+  // Lấy tên định danh từ trình duyệt
   const [userName, setUserName] = useState<string | null>(localStorage.getItem('workspace_user')); 
 
   const loginAsUser = (name: string) => {

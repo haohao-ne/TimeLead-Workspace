@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Fix lỗi tàng hình trên Mobile Picker */
+select option {
+  color: #1D1D1F !important; /* Ép màu đen của Apple */
+  background-color: #FFFFFF !important;
+  font-size: 16px; /* Kích thước chuẩn để Mobile không bị zoom jarring */
+}
+
+/* Ẩn icon mũi tên mặc định của hệ thống để dùng icon của chúng ta (nếu cần) */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
